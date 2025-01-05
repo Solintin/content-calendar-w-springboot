@@ -1,0 +1,39 @@
+### Get All Content
+GET http://localhost:8080/api/content
+
+### Get Content By ID
+GET http://localhost:8080/api/content/{id}
+
+### Create New Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": "3",
+  "title": "Third Po st",
+  "desc": "This is my Third post",
+  "status": "IDEA",
+  "contentType": "VIDEO",
+  "createdAt": "2025-01-04T21:06:44.138088",
+  "updatedAt": null,
+  "url": "https://dev.to/java-spring-boot"
+}
+
+
+### Update Content
+PUT http://localhost:8080/api/content/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Third Updated  Post",
+  "desc": "This is my Third post",
+  "status": "IDEA",
+  "contentType": "VIDEO",
+  "createdAt": "2025-01-04T21:06:44.138088",
+  "updatedAt": "2025-01-04T21:49:44.138088",
+  "url": "https://medium.com/java-spring-boot"
+}
+
+### Delete Content
+DELETE http://localhost:8080/api/content/3
